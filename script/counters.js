@@ -1,4 +1,3 @@
-// metrics.js
 (function () {
 
   console.log("Metrics JS Loaded");
@@ -45,7 +44,7 @@
 
   function animateCount(el, target) {
     let start = 0;
-    const duration = 1500; // ms
+    const duration = 1500;
     const startTime = performance.now();
 
     function update(now) {

@@ -563,3 +563,98 @@ main .product{
   font-weight: 300;
   text-align: center;
 }
+
+/* table section */
+.tableSection{
+    width: 100%;
+    padding: 6rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.table-title{
+    color: var(--color-primary-900);
+    font-size: 36px;
+    font-weight: 600;
+}
+.tableSection table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 16px;
+}
+
+.tableSection thead th {
+  padding-bottom: 20px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.product-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-header img {
+  height: 88px;
+  width: 88px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.tableSection td {
+  padding: 16px;
+  border-bottom: 1px solid var(--color-muted);
+  border-top: 1px solid var(--color-muted);
+  color: var(--text-muted-1);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+}
+
+.bold {
+  font-weight: 600;
+  color: var(--color-primary-900);
+}
+
+.highlight {
+  background-color: var(--bg-surface);
+  padding: 16px;
+}
+.highlight p{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+}
+.tableSection p{
+    color: var(--text-muted-1);
+    font-size: 12px;
+    font-weight: 300;
+}
+.tableSection .properties-heading{
+    text-align: left;
+}
+.tableSection .properties{
+    text-align: left;
+    color: var(--text-muted-1);
+    font-size: 16px;
+    font-weight: 700;
+}
+.tableSection button{
+    width: 12rem;
+    padding: 12px;
+}
+.tableSection .symbol{
+    text-align: center;
+    color: var(--color-primary-900);
+    font-size: 40px;
+    font-weight: 300;
+}
