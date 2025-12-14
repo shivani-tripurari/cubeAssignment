@@ -11,38 +11,38 @@
     <link rel="stylesheet" href="styles/40-responsive.css" >
 </head>
 <body>
-   
-    <!-- navbar -->
-     <header class="site-header">
-        <div class="container header__inner">
-            <a href="#" class="brand">GTG</a>
-            <nav class="nav" aria-label="Main navigation">
-                <button class="nav__toggle" aria-expanded="false" aria-controls="nav-panel">☰</button>
-                <ul id="nav-panel" class="nav__list">
-                    <li><a href="#">Home</a></li>
-                    <li><a class="shop" href="#">Shop<img src="assets/icons/downArrow.svg"></a></li>
-                    <li><a href="#">Fragrances</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="side-nav">
-                <!-- search icon -->
-                 <img src="assets/icons/search.svg">
-                 <button>Shop Now</button>
-            </div>
-        </div>
-     </header>
-     <!-- main container -->
-     <main>
+
+    <!-- main container -->
+    <main>
         <!-- hero -->
         <!-- <img class="hero__img" src="assets/img/hero.svg"> -->
         <section class="hero">
+            <!-- navbar moved inside hero -->
+            <header class="site-header">
+                <div class="container header__inner">
+                    <a href="#" class="brand">GTG</a>
+                    <nav class="nav" aria-label="Main navigation">
+                        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-panel">☰</button>
+                        <ul id="nav-panel" class="nav__list">
+                            <li><a href="#">Home</a></li>
+                            <li><a class="shop" href="#">Shop<img src="assets/icons/downArrow.svg"></a></li>
+                            <li><a href="#">Fragrances</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="side-nav">
+                        <!-- search icon -->
+                        <img src="assets/icons/search.svg">
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+            </header>
             <div class="award__container">
                 <div class="award__heading">
                     <div class="award__chip">
-                        <img src="assets/icons/award.svg">    
+                        <img src="assets/icons/award.svg">
                         Awarded the best perfume in the world
                     </div>
                     <h1>Live your best life.</h1>
@@ -65,7 +65,7 @@
             </div>
         </section>
         <!-- product -->
-         <section class="product">
+        <section class="product">
             <div class="product-gallery">
                 <div class="product-gallery__main">
                     <img 
@@ -81,14 +81,14 @@
                     </div>
                 </div>
                 <div class="grid__container">
-                    <img class="grid__imgs" data-thumb="0" src="assets/img/gridImg1.svg" alt=""/>
-                    <img class="grid__imgs" data-thumb="1" src="assets/img/gridImg2.svg" alt=""/>
-                    <img class="grid__imgs" data-thumb="2" src="assets/img/gridImg3.svg" alt=""/>
-                    <img class="grid__imgs" data-thumb="3" src="assets/img/gridImg4.svg" alt=""/>
-                    <img class="grid__imgs" data-thumb="4" src="assets/img/gridImg1.svg" alt=""/>
-                    <img class="grid__imgs" data-thumb="5" src="assets/img/gridImg2.svg" alt=""/>
-                    <img class="grid__imgs" data-thumb="6" src="assets/img/gridImg3.svg" alt=""/>
-                    <img class="grid__imgs" data-thumb="7" src="assets/img/gridImg4.svg" alt=""/>
+                    <img class="grid__imgs" data-thumb="0" src="assets/img/gridImg1.svg" alt="" loading="lazy" />
+                    <img class="grid__imgs" data-thumb="1" src="assets/img/gridImg2.svg" alt="" loading="lazy" />
+                    <img class="grid__imgs" data-thumb="2" src="assets/img/gridImg3.svg" alt="" loading="lazy" />
+                    <img class="grid__imgs" data-thumb="3" src="assets/img/gridImg4.svg" alt="" loading="lazy" />
+                    <img class="grid__imgs" data-thumb="4" src="assets/img/gridImg1.svg" alt="" loading="lazy" />
+                    <img class="grid__imgs" data-thumb="5" src="assets/img/gridImg2.svg" alt="" loading="lazy" />
+                    <img class="grid__imgs" data-thumb="6" src="assets/img/gridImg3.svg" alt="" loading="lazy" />
+                    <img class="grid__imgs" data-thumb="7" src="assets/img/gridImg4.svg" alt="" loading="lazy" />
                 </div>
             </div>
             <div class="product__desc">
@@ -114,7 +114,7 @@
                             type="radio"
                             checked
                          />
-                         <label>Single Subscription</label>
+                            <label>Single Subscription</label>
                         </div>
                         <div class="cost">
                             <span>$99.99</span>
@@ -122,84 +122,84 @@
                     </div>
                     <div class="subscription__body">
                         <div class="choose_fragrance">
-                        <h3>Choose a Fragrance</h3>
-                        <div class="fragrance__options">
-                            <div class="fragrance">
-                                <div class="heading">
+                            <h3>Choose a Fragrance</h3>
+                            <div class="fragrance__options">
+                                <div class="fragrance">
+                                    <div class="heading">
                                     <input 
                                         type="radio" 
                                         name="fragrance-type"
                                         value="original"
                                     /> 
-                                    <label>Original</label>
+                                        <label>Original</label>
+                                    </div>
+                                    <div class="fragrance-img">
+                                        <img src="assets/img/perfume1sm.svg" alt="" loading="lazy" />
+                                    </div>
                                 </div>
-                                <div class="fragrance-img">
-                                    <img src="assets/img/perfume1sm.svg" />
-                                </div>
-                            </div>
-                            <div class="fragrance">
-                                <div class="heading">
+                                <div class="fragrance">
+                                    <div class="heading">
                                     <input 
                                         type="radio" 
                                         name="fragrance-type"
                                         value="lily"
                                     /> 
-                                    <label>Lily</label>
+                                        <label>Lily</label>
+                                    </div>
+                                    <div class="fragrance-img">
+                                        <img src="assets/img/perfume2.svg" alt="" loading="lazy" />
+                                    </div>
                                 </div>
-                                <div class="fragrance-img">
-                                    <img src="assets/img/perfume2.svg" />
-                                </div>
-                            </div>
-                            <div class="fragrance">
-                                <div class="heading">
+                                <div class="fragrance">
+                                    <div class="heading">
                                     <input 
                                         type="radio" 
                                         name="fragrance-type"
                                         value="rose"
                                     /> 
-                                    <label>Rose</label>
-                                </div>
-                                <div class="fragrance-img">
-                                    <img src="assets/img/perfume3.svg" />
+                                        <label>Rose</label>
+                                    </div>
+                                    <div class="fragrance-img">
+                                        <img src="assets/img/perfume3.svg" alt="" loading="lazy" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="included">
-                        <h3>What's Included:</h3>
-                        <div class="options">
-                            <div class="option-1">
-                                <p>Every 30 Days</p>
-                                <img src="assets/img/perfume1sm.svg" />
-                            </div>
-                            <div class="option-2">
-                                <p>One Time<span> (Free)</span></p>
-                                <img src="assets/img/combined.svg" />
+                        <div class="included">
+                            <h3>What's Included:</h3>
+                            <div class="options">
+                                <div class="option-1">
+                                    <p>Every 30 Days</p>
+                                    <img src="assets/img/perfume1sm.svg" alt="" loading="lazy" />
+                                </div>
+                                <div class="option-2">
+                                    <p>One Time<span> (Free)</span></p>
+                                    <img src="assets/img/combined.svg" alt="" loading="lazy" />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="points">
+                        <div class="product-info">
+                            <div class="points">
                             <img src="assets/icons/point.svg"/>
-                            <p>1 bottle shipped monthly</p>
-                        </div>
-                        <div class="points">
+                                <p>1 bottle shipped monthly</p>
+                            </div>
+                            <div class="points">
                                 <img src="assets/icons/point.svg"/>
                                 <p><span>Free</span> Sampler for original, lily and rose fragrances</p>
-                        </div>
-                        <div class="points">
+                            </div>
+                            <div class="points">
                                 <img src="assets/icons/point.svg"/>
                                 <p><span>50% OFF Shipping </span></p>
-                        </div>
-                        <div class="points">
+                            </div>
+                            <div class="points">
                                 <img src="assets/icons/point.svg"/>
                                 <p>Pause or Cancel Anytime after 3 months minimum</p>
-                        </div>
-                        <div class="points">
+                            </div>
+                            <div class="points">
                                 <img src="assets/icons/point.svg"/>
                                 <p>28 Day Money Back Guarantee*</p>
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
                 <div class="double-subscription__radio subscription__radio">
@@ -210,7 +210,7 @@
                             value="double-subscription"
                             type="radio"
                          />
-                         <label>Double Subscription</label>
+                            <label>Double Subscription</label>
                         </div>
                         <div class="cost">
                             <span>$169.99</span>
@@ -218,142 +218,142 @@
                     </div>
                     <div class="subscription__body">
                         <div class="choose_fragrance">
-                        <h3>Choose a Fragrance 1</h3>
-                        <div class="fragrance__options">
-                            <div class="fragrance">
-                                <div class="heading">
+                            <h3>Choose a Fragrance 1</h3>
+                            <div class="fragrance__options">
+                                <div class="fragrance">
+                                    <div class="heading">
                                     <input 
                                         type="radio" 
                                         name="fragrance-type1"
                                         value="original"
                                     /> 
-                                    <label>Original</label>
+                                        <label>Original</label>
+                                    </div>
+                                    <div class="fragrance-img">
+                                        <img src="assets/img/perfume1sm.svg" alt="" loading="lazy" />
+                                    </div>
                                 </div>
-                                <div class="fragrance-img">
-                                    <img src="assets/img/perfume1sm.svg" />
-                                </div>
-                            </div>
-                            <div class="fragrance">
-                                <div class="heading">
+                                <div class="fragrance">
+                                    <div class="heading">
                                     <input 
                                         type="radio" 
                                         name="fragrance-type1"
                                         value="lily"
                                     /> 
-                                    <label>Lily</label>
+                                        <label>Lily</label>
+                                    </div>
+                                    <div class="fragrance-img">
+                                        <img src="assets/img/perfume2.svg" alt="" loading="lazy" />
+                                    </div>
                                 </div>
-                                <div class="fragrance-img">
-                                    <img src="assets/img/perfume2.svg" />
-                                </div>
-                            </div>
-                            <div class="fragrance">
-                                <div class="heading">
+                                <div class="fragrance">
+                                    <div class="heading">
                                     <input 
                                         type="radio" 
                                         name="fragrance-type1"
                                         value="rose"
                                     /> 
-                                    <label>Rose</label>
-                                </div>
-                                <div class="fragrance-img">
-                                    <img src="assets/img/perfume3.svg" />
+                                        <label>Rose</label>
+                                    </div>
+                                    <div class="fragrance-img">
+                                        <img src="assets/img/perfume3.svg" alt="" loading="lazy" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="choose_fragrance">
-                        <h3>Choose a Fragrance 2</h3>
-                        <div class="fragrance__options">
-                            <div class="fragrance">
-                                <div class="heading">
+                        <div class="choose_fragrance">
+                            <h3>Choose a Fragrance 2</h3>
+                            <div class="fragrance__options">
+                                <div class="fragrance">
+                                    <div class="heading">
                                     <input 
                                         type="radio" 
                                         name="fragrance-type2"
                                         value="original"
                                     /> 
-                                    <label>Original</label>
+                                        <label>Original</label>
+                                    </div>
+                                    <div class="fragrance-img">
+                                        <img src="assets/img/perfume1sm.svg" alt="" loading="lazy" />
+                                    </div>
                                 </div>
-                                <div class="fragrance-img">
-                                    <img src="assets/img/perfume1sm.svg" />
-                                </div>
-                            </div>
-                            <div class="fragrance">
-                                <div class="heading">
+                                <div class="fragrance">
+                                    <div class="heading">
                                     <input 
                                         type="radio" 
                                         name="fragrance-type2"
                                         value="lily"
                                     /> 
-                                    <label>Lily</label>
+                                        <label>Lily</label>
+                                    </div>
+                                    <div class="fragrance-img">
+                                        <img src="assets/img/perfume2.svg" alt="" loading="lazy" />
+                                    </div>
                                 </div>
-                                <div class="fragrance-img">
-                                    <img src="assets/img/perfume2.svg" />
-                                </div>
-                            </div>
-                            <div class="fragrance">
-                                <div class="heading">
+                                <div class="fragrance">
+                                    <div class="heading">
                                     <input 
                                         type="radio" 
                                         name="fragrance-type2"
                                         value="rose"
                                     /> 
-                                    <label>Rose</label>
-                                </div>
-                                <div class="fragrance-img">
-                                    <img src="assets/img/perfume3.svg" />
+                                        <label>Rose</label>
+                                    </div>
+                                    <div class="fragrance-img">
+                                        <img src="assets/img/perfume3.svg" alt="" loading="lazy" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="included">
-                        <h3>What's Included:</h3>
-                        <div class="options">
-                            <div class="option-1">
-                                <p>Every 30 Days</p>
-                                <img src="assets/img/perfume1sm.svg" />
-                            </div>
-                            <div class="option-2">
-                                <p>One Time<span> (Free)</span></p>
-                                <img src="assets/img/combined.svg" />
+                        <div class="included">
+                            <h3>What's Included:</h3>
+                            <div class="options">
+                                <div class="option-1">
+                                    <p>Every 30 Days</p>
+                                    <img src="assets/img/perfume1sm.svg" alt="" loading="lazy" />
+                                </div>
+                                <div class="option-2">
+                                    <p>One Time<span> (Free)</span></p>
+                                    <img src="assets/img/combined.svg" alt="" loading="lazy" />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="points">
+                        <div class="product-info">
+                            <div class="points">
                             <img src="assets/icons/point.svg"/>
-                            <p>1 bottle shipped monthly</p>
-                        </div>
-                        <div class="points">
+                                <p>1 bottle shipped monthly</p>
+                            </div>
+                            <div class="points">
                                 <img src="assets/icons/point.svg"/>
                                 <p><span>Free</span> Sampler for original, lily and rose fragrances</p>
-                        </div>
-                        <div class="points">
+                            </div>
+                            <div class="points">
                                 <img src="assets/icons/point.svg"/>
                                 <p><span>50% OFF Shipping </span></p>
-                        </div>
-                        <div class="points">
+                            </div>
+                            <div class="points">
                                 <img src="assets/icons/point.svg"/>
                                 <p>Pause or Cancel Anytime after 3 months minimum</p>
-                        </div>
-                        <div class="points">
+                            </div>
+                            <div class="points">
                                 <img src="assets/icons/point.svg"/>
                                 <p>28 Day Money Back Guarantee*</p>
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
                 <button id="addToCart">Add to Cart</button>
             </div>
-         </section>
+        </section>
 
         <!-- collection -->
-         <section class="collection">
+        <section class="collection">
             <div class="accordion">
                 <h2>Our Collection</h2>
                 <div id="accordion-list"></div>
             </div>
             <div class="collection-img"></div>
-         </section>
+        </section>
 
         <!-- banner -->
         <section class="banner">
@@ -362,118 +362,118 @@
 
 
         <!-- table -->
-         <section class="tableSection">
+        <section class="tableSection">
             <p class="symbol">---</p>
             <h3 class="table-title">Why GTG is the #1 Choice</h3>
             <table>
                 <thead>
-                <tr>
-                    <th class="properties-heading">Qualities</th>
+                    <tr>
+                        <th class="properties-heading">Qualities</th>
 
-                    <!-- GTG Column -->
-                    <th class="highlight">
-                    <div class="product-header">
-                        <img src="assets/img/gtg.svg" alt="GTG">
-                        <p>GTG</p>
-                    </div>
-                    </th>
+                        <!-- GTG Column -->
+                        <th class="highlight">
+                            <div class="product-header">
+                                <img src="assets/img/gtg.svg" alt="GTG" loading="lazy">
+                                <p>GTG</p>
+                            </div>
+                        </th>
 
-                    <!-- Other Products -->
-                    <th>
-                    <div class="product-header">
-                        <img src="assets/img/arose.svg" alt="Arose">
-                        <p>Arose</p>
-                    </div>
-                    </th>
+                        <!-- Other Products -->
+                        <th>
+                            <div class="product-header">
+                                <img src="assets/img/arose.svg" alt="Arose" loading="lazy">
+                                <p>Arose</p>
+                            </div>
+                        </th>
 
-                    <th>
-                    <div class="product-header">
-                        <img src="assets/img/bella.svg" alt="Bella">
-                        <p>Bella</p>
-                    </div>
-                    </th>
+                        <th>
+                            <div class="product-header">
+                                <img src="assets/img/bella.svg" alt="Bella" loading="lazy">
+                                <p>Bella</p>
+                            </div>
+                        </th>
 
-                    <th>
-                    <div class="product-header">
-                        <img src="assets/img/daisies.svg" alt="Daisies">
-                        <p>Daisies</p>
-                    </div>
-                    </th>
-                </tr>
+                        <th>
+                            <div class="product-header">
+                                <img src="assets/img/daisies.svg" alt="Daisies" loading="lazy">
+                                <p>Daisies</p>
+                            </div>
+                        </th>
+                    </tr>
                 </thead>
 
                 <tbody>
-                <tr>
+                    <tr>
                     <td class="properties" >Potency Concentration</td>
-                    <td class="highlight bold">10x</td>
-                    <td>1x</td>
-                    <td>1x</td>
-                    <td>10x</td>
-                </tr>
+                        <td class="highlight bold">10x</td>
+                        <td>1x</td>
+                        <td>1x</td>
+                        <td>10x</td>
+                    </tr>
 
-                <tr>
+                    <tr>
                     <td class="properties" >Longevity</td>
-                    <td class="highlight"><img class="icon" src="assets/icons/check.svg"></td>
-                    <td><img class="icon" src="assets/icons/cross.svg"></td>
-                    <td><img class="icon" src="assets/icons/cross.svg"></td>
-                    <td><img class="icon" src="assets/icons/plainCheck.svg"></td>
-                </tr>
+                        <td class="highlight"><img class="icon" src="assets/icons/check.svg"></td>
+                        <td><img class="icon" src="assets/icons/cross.svg"></td>
+                        <td><img class="icon" src="assets/icons/cross.svg"></td>
+                        <td><img class="icon" src="assets/icons/plainCheck.svg"></td>
+                    </tr>
 
-                <tr>
+                    <tr>
                     <td class="properties" >Sillage</td>
-                    <td class="highlight"><img class="icon" src="assets/icons/check.svg"></td>
-                    <td><img class="icon" src="assets/icons/cross.svg"></td>
-                    <td><img class="icon" src="assets/icons/cross.svg"></td>
-                    <td><img class="icon" src="assets/icons/plainCheck.svg"></td>
-                </tr>
+                        <td class="highlight"><img class="icon" src="assets/icons/check.svg"></td>
+                        <td><img class="icon" src="assets/icons/cross.svg"></td>
+                        <td><img class="icon" src="assets/icons/cross.svg"></td>
+                        <td><img class="icon" src="assets/icons/plainCheck.svg"></td>
+                    </tr>
 
-                <tr>
+                    <tr>
                     <td class="properties" >Bottle Design Score</td>
-                    <td class="highlight bold">9</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>2</td>
-                </tr>
+                        <td class="highlight bold">9</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                    </tr>
 
-                <tr>
+                    <tr>
                     <td class="properties" >Blend and Harmony</td>
-                    <td class="highlight"><img class="icon" src="assets/icons/check.svg"></td>
-                    <td><img class="icon" src="assets/icons/cross.svg"></td>
-                    <td><img class="icon" src="assets/icons/cross.svg"></td>
-                    <td><img class="icon" src="assets/icons/cross.svg"></td>
-                </tr>
+                        <td class="highlight"><img class="icon" src="assets/icons/check.svg"></td>
+                        <td><img class="icon" src="assets/icons/cross.svg"></td>
+                        <td><img class="icon" src="assets/icons/cross.svg"></td>
+                        <td><img class="icon" src="assets/icons/cross.svg"></td>
+                    </tr>
 
-                <tr>
+                    <tr>
                     <td class="properties" >Skin Compatibility</td>
-                    <td class="highlight"><img class="icon" src="assets/icons/check.svg"></td>
-                    <td><img class="icon" src="assets/icons/plainCheck.svg"></td>
-                    <td><img class="icon" src="assets/icons/plainCheck.svg"></td>
-                    <td><img class="icon" src="assets/icons/cross.svg"></td>
-                </tr>
+                        <td class="highlight"><img class="icon" src="assets/icons/check.svg"></td>
+                        <td><img class="icon" src="assets/icons/plainCheck.svg"></td>
+                        <td><img class="icon" src="assets/icons/plainCheck.svg"></td>
+                        <td><img class="icon" src="assets/icons/cross.svg"></td>
+                    </tr>
 
-                <tr>
+                    <tr>
                     <td class="properties" >Scent Profile</td>
-                    <td class="highlight"><img class="icon" src="assets/icons/check.svg"></td>
-                    <td><img class="icon" src="assets/icons/plainCheck.svg"></td>
-                    <td><img class="icon" src="assets/icons/cross.svg"></td>
-                    <td><img class="icon" src="assets/icons/plainCheck.svg"></td>
-                </tr>
+                        <td class="highlight"><img class="icon" src="assets/icons/check.svg"></td>
+                        <td><img class="icon" src="assets/icons/plainCheck.svg"></td>
+                        <td><img class="icon" src="assets/icons/cross.svg"></td>
+                        <td><img class="icon" src="assets/icons/plainCheck.svg"></td>
+                    </tr>
 
-                <tr>
+                    <tr>
                     <td class="properties" >Price vs. Quality</td>
-                    <td class="highlight"><img class="icon" src="assets/icons/check.svg"></td>
-                    <td><img class="icon" src="assets/icons/cross.svg"></td>
-                    <td><img class="icon" src="assets/icons/plainCheck.svg"></td>
-                    <td><img class="icon" src="assets/icons/cross.svg"></td>
-                </tr>
+                        <td class="highlight"><img class="icon" src="assets/icons/check.svg"></td>
+                        <td><img class="icon" src="assets/icons/cross.svg"></td>
+                        <td><img class="icon" src="assets/icons/plainCheck.svg"></td>
+                        <td><img class="icon" src="assets/icons/cross.svg"></td>
+                    </tr>
                 </tbody>
             </table>
             <button>Try it Risk-Free</button>
-         </section>
-     </main>
-    
-      <!-- footer -->
-     <footer class="site-footer">
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="site-footer">
         <div class="container">
             <h3 class="title">GTG</h3>
             <div class="sub-container">
@@ -489,9 +489,15 @@
                         <p>Contact</p>
                     </div>
                     <div class="col">
-                        <div class="socials"><img src="assets/icons/facebook.svg" /><p>Facebook</p></div>
-                        <div class="socials"><img src="assets/icons/insta.svg" /><p>Instagram</p></div>
-                        <div class="socials"><img src="assets/icons/x.svg" /><p>X</p></div>
+                        <div class="socials"><img src="assets/icons/facebook.svg" alt="" loading="lazy" />
+                            <p>Facebook</p>
+                        </div>
+                        <div class="socials"><img src="assets/icons/insta.svg" alt="" loading="lazy" />
+                            <p>Instagram</p>
+                        </div>
+                        <div class="socials"><img src="assets/icons/x.svg" alt="" loading="lazy" />
+                            <p>X</p>
+                        </div>
                     </div>
                 </div>
                 <div class="form">
@@ -508,13 +514,13 @@
                 </div>
             </div>
         </div>
-     </footer>
+    </footer>
 
-     <!-- script -->
-      <script defer src="script/main.js"></script>
-      <script defer src="script/gallery.js"></script>
-      <script defer src="script/subscriptions.js"></script>
-      <script defer src="script/accordian.js"></script>
-      <script defer src="script/counters.js"></script>
+    <!-- script -->
+    <script defer src="script/main.js"></script>
+    <script defer src="script/gallery.js"></script>
+    <script defer src="script/subscriptions.js"></script>
+    <script defer src="script/accordian.js"></script>
+    <script defer src="script/counters.js"></script>
 </body>
 </html>
