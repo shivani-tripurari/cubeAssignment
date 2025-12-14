@@ -447,6 +447,87 @@ main .product{
 }
 
 /* collection section */
+.collection{
+    padding: 92px 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 108px;
+}
+.collection .accordion{
+    width: 55%;
+}
+.accordion h2{
+    color: var(--color-primary-900);
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 36px;
+}
+#accordion-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+.accordion-item{
+    width: 100%;
+    border: 1px solid var(--color-muted);
+    border-radius: 16px;
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+}
+.accordion-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20rem;
+    align-items: center;
+}
+.accordion-header h3{
+    color: var(--color-primary-900);
+    font-size: 20px;
+    font-weight: 700;
+}
+.accordion-header .accordion-toggle{
+    color: var(--color-primary-900);
+    font-size: 24px;
+    font-weight: 700;
+}
+.accordion-body p{
+    color: var(--text-muted-1);
+    font-size: 16px;
+    font-weight: 300;
+    padding: 24px 0px;
+}
+/* COLLAPSED STATE */
+.accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height .35s ease, opacity .25s ease;
+}
+
+/* EXPANDED STATE */
+.accordion-body.open {
+    max-height: 300px; /* something large enough */
+    opacity: 1;
+}
+
+
+.collection-img{
+    width: 50%;
+    height: 40rem;
+    border-radius: 30px;
+    background-image: url(../assets/img/collection.svg);
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
 /* main .collection{
     width: 100%;
     height: 100vh;
