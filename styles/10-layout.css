@@ -57,16 +57,16 @@
 }
 
 /* hero section */
-main .hero{
+.hero{
     width: 100%;
-    height: 100%;
-    position: absolute;
+    height: 100vh;
+    position: relative;
     background-image: url("../assets/img/hero.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-main .award__container{
+.award__container{
     position: absolute;
     width: 100%;
     top: 20%;
@@ -141,3 +141,315 @@ main .award__stats{
 .award__container button{
     width: 186px;
 }
+
+/* product section */
+main .product{
+    padding: 92px 64px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 108px;
+}
+.product .product-gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 50%;
+}
+.product-gallery__main{
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+    /* height: 670px; */
+    /* background-color: black; */
+    border-radius: 16px;
+}
+.product-gallery__main-img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+}
+.controls{
+    position: absolute;
+    top: 92%;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.data-gallery-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.gallery-dot{
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+      border: 1px solid var(--color-primary-900); 
+    background-color: transparent;
+}
+.gallery-dot.active {
+  background: var(--color-primary-900);
+  border-color: var(--color-primary-900);
+}
+.grid__container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+.grid__container .grid__imgs{
+    border-radius: 16px;
+    
+    height: 130px;
+    width: 130px;
+}
+
+.product .product__desc{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.product__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 20px;
+}
+.product__heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 8px;
+}
+.product__heading h3{
+    color: var(--color-primary-900);
+    font-size: 36px;
+    font-weight:600;
+}
+.product__rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 6px;
+}
+.product__rating p{
+    font-size: 12px;
+}
+.product__desc .product__text p{
+   color: var(--color-primary-900); 
+   font-size: 16px;
+   font-weight: 300;
+   text-align: left;
+}
+
+.subscription__radio {
+    width: 100%;
+    border: 1px solid var(--color-muted);
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.subscription__type {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* COLLAPSIBLE BODY */
+.subscription__body {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height .35s ease, opacity .25s ease;
+}
+
+.subscription__body.open {
+    max-height: 2000px;
+    opacity: 1;
+}
+
+.subscription__tag{
+    background-image: var(--gradient-secondary);
+    width: 100%;
+    border: 8px;
+    border-radius:8px 8px 0px 0px;
+}
+.subscription__tag h3{
+    color: var(--text-white);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 8px;
+}
+
+
+.subscription__type{
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+   margin: 16px;
+   padding-bottom: 12px;
+   border-bottom: 1px solid #919798;
+}
+.subscription__text label{
+    color: var(--color-primary-900);
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 4px;
+}
+.cost span{
+    color: var(--color-primary-900);
+    font-size: 20px;
+    font-weight: 700;
+}
+.choose_fragrance{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 8px;
+    margin: 16px;
+}
+
+.choose_fragrance h3{
+    color: var(--color-primary-900);
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+}
+.fragrance__options{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 12px;
+}
+.fragrance{
+    padding: 12px;
+    width: 33%;
+    background-color: var(--color-secondary-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border-radius: 6px;
+}
+.fragrance .heading label{
+    padding-left: 4px;
+    color: var(--gradient-primary-60);
+    font-size: 12px;
+    font-weight: 300;
+}
+.fragrance-img{
+    margin-left: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fragrance-img img{
+    object-fit: contain;
+}
+
+.included{
+    width: 9-0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 8px;
+    margin: 16px;
+}
+.included h3{
+    color: var(--color-primary-900);
+    font-size: 16px;
+    font-weight: 300;
+}
+.included .options{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+.options .option-1{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    background-color: transparent;
+    border: 1px solid var(--text-muted-3);
+    border-radius: 6px;
+}
+.options .option-2{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 67%;
+    background-color: transparent;
+    border: 1px solid var(--text-muted-3);
+    border-radius: 6px;
+}
+.options p{
+    color: var(--text-muted-2);
+    font-size: 16px;
+    font-weight: 300;
+}
+.options span{
+    color: var(--color-primary-900);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    margin: 16px;
+    gap: 4px;
+}
+.product-info .points{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 4px;
+}
+.product-info .points p{
+    color: var(--color-primary-900);
+    font-size: 14px;
+    font-weight: 300;
+}
+.product-info .points span{
+    color: var(--color-primary-900);
+    font-size: 14px;
+    font-weight:700;
+}
+.product__desc button{
+    width: 100%;
+}
+
+/* collection section */
+/* main .collection{
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;
+    position: relative;
+} */

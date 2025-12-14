@@ -9,11 +9,19 @@
   /* primary colors */
   --color-primary-900: #032E15;  
   --color-primary-700: #0D542B;  
-  --color-primary-600: #016630;   
+  --color-primary-600: #016630;  
+  --color-muted: #666666;
+  --color-secondary-bg: #f9f9f9; 
 
   /* gradients */
   --gradient-primary-100: linear-gradient(180deg, #032E15 0%, #016630 100%); 
   --gradient-primary-60: linear-gradient(180deg, #032E15 0%, #016630 100%); 
+  --gradient-secondary: linear-gradient(
+  270deg,
+  #032E15 0%,
+  #008236 52%,
+  #00C950 100%
+);
 
   /* font-colors */
   --text-default: #032E15;    
