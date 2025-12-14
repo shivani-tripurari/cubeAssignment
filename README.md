@@ -2,6 +2,8 @@
 
 This project is a responsive, pixel-accurate implementation of the GTG Perfumes product page based on the provided Figma design. The objective was to replicate the layout and interactions using only **HTML**, **CSS**, and **vanilla JavaScript**, while ensuring clean code structure and strong performance.
 
+**Hosted site : https://shivani-tripurari.github.io/cubeAssignment/**
+
 ## Features
 
 ### Pixel-Perfect UI
