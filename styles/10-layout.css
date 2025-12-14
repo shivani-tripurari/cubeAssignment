@@ -528,9 +528,38 @@ main .product{
     object-fit: contain;
     background-repeat: no-repeat;
 }
-/* main .collection{
+
+/* banner */
+.banner{
     width: 100%;
-    height: 100vh;
-    background-color: yellow;
-    position: relative;
-} */
+    padding: 24px;
+    background-image: var(--gradient-primary-100);
+}
+.metrics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 86px;
+}
+.metric-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.metric-percentage {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-white);
+}
+
+.metric-info {
+  font-size: 16px;
+  color: var(--text-white);
+  font-weight: 300;
+  text-align: center;
+}
